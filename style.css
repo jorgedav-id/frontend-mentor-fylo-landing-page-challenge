@@ -48,7 +48,7 @@ h1 {
 
 .text-section-1 {
     text-align: left;
-    width: 80%;
+    width: 90%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -82,12 +82,102 @@ h1 {
     border-color: unset;
     border-radius: 7px;
     width: 30%;
-    padding: 15px 20px;
+    padding: 12px 20px;
     font-weight: bold;
     font-size:small;
     color: white;
 }
 
+.section-2 {
+    background-image: url(/images/bg-curve-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 2rem;
+    color: hsl(243, 87%, 12%);
+}
+
+.section-2 p {
+    text-align: left;
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: hsl(243, 87%, 12%);
+}
+
+.section-2 .left-column {
+    padding-bottom: 100px;
+}
+
+.section-2 a {
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-color: hsl(170, 45%, 43%);
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    padding: 0px 15px 10px 25px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px 2px hsl(0, 0%, 75%);
+}
+
+.quote-testimonial {
+    height: 25px;
+    padding-top: 15px;
+}
+
+.testimonial-card p {
+    text-align: left;
+    margin-top: 5px;
+    width: 95%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.8rem;
+    color: hsl(243, 87%, 12%);
+}
+
+.testimonial-user-info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-user-info p {
+    width: 100%;
+    margin: 0px;
+    font-size: 0.8rem;
+    color: hsl(243, 87%, 12%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.testimonial-card h5 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: hsl(243, 87%, 12%);
+}
 
 
 @media (max-width:320px) {
