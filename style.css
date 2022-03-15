@@ -1,11 +1,18 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    margin: 0px;
 }
+
+::placeholder {
+    color: hsl(0, 0%, 75%);
+}
+/* HEADER */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 2em;
 }
 
 nav {
@@ -15,19 +22,19 @@ nav {
     color: hsl(243, 87%, 12%);
 }
 
-.menu {
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
+/* define two column layout */
 .row, footer {
     display: flex;
-    padding: 3% 5% 3% 3%;
+    padding: 70px 15px 25px 50px;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .left-column {
@@ -36,6 +43,16 @@ nav {
 
 .rigth-column {
     width: 50%;
+}
+
+.row {
+    padding-top: 70px;
+}
+
+/* section 1*/
+.section-1 {
+    padding-bottom: 100px;
+    align-items: center;
 }
 
 h1 {
@@ -73,10 +90,6 @@ h1 {
     border-color: hsl(243, 87%, 12%);
 }
 
-::placeholder {
-    color: hsl(0, 0%, 75%);
-}
-
 .button {
     background-color: hsl(224, 93%, 58%);
     border-color: unset;
@@ -85,14 +98,16 @@ h1 {
     padding: 12px 20px;
     font-weight: bold;
     font-size:small;
-    color: white;
+    color: hsl(240, 75%, 98%);;
 }
 
+/*section 2 */
 .section-2 {
     background-image: url(/images/bg-curve-desktop.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-top: 100px;
 }
 
 h2 {
@@ -179,6 +194,125 @@ h2 {
     color: hsl(243, 87%, 12%);
 }
 
+/* section 3 */
+.section-3 {
+    background-color: hsl(238, 22%, 44%);
+    color: hsl(240, 75%, 98%);
+    height: 10em;
+}
+
+.section-3 h3 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: hsl(240, 75%, 98%);
+}
+
+.section-3 .button {
+    border: 0px;
+    border-radius: 3px;
+}
+
+.section-3 p {
+    width: 75%;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-contact-2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+#email-contact-2 {
+    width: 80%;
+    padding: 15px;
+    font-size: small;
+    font-weight: 600;
+    border-radius: 7px;
+    border: 1px solid;
+    border-color: hsl(240, 75%, 98%);
+}
+
+/* footer */
+footer {
+    padding-top: 70px;
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(240, 75%, 98%);
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo-footer-container {
+    width: 100%;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.footer-contact-info .icon {
+    width: 15px;
+    margin-right: 15px;
+}
+
+.footer-contact-info span {
+    font-size: medium;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+footer li {
+    padding-bottom: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(240, 75%, 98%);
+}
+
+footer .left-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    column-gap: 150px;
+}
+
+footer .rigth-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    column-gap: 10em;
+    margin-left: 0px;
+}
+
+.button-social {
+    width: 35px;
+    height: 35px;
+    border: 1px solid;
+    align-content: center;
+    border-radius: 50px;
+    background: none;
+    border-color: hsl(240, 75%, 98%);
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: baseline;
+}
+
+/* breakpoint */
 
 @media (max-width:320px) {
     header {

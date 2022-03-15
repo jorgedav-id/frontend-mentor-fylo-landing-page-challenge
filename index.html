@@ -23,7 +23,7 @@
       <img src="images/logo.svg" alt="logo" width="135" class="logo-nav">
     </figure>
     <nav>
-      <ul class="menu">
+      <ul>
         <li>Features</li>
         <li>Team</li>
         <li>Sign In</li>
@@ -31,7 +31,7 @@
     </nav>
   </header>
   <main>
-    <section class="row">
+    <section class="row section-1">
       <div class="left-column">
         <h1>All your files in one secure<br> location, accesible anywhere.</h1>
         <p class="text-section-1">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers</p>
@@ -41,7 +41,7 @@
         </form>
       </div>
       <div class="rigth-column">
-        <img  src="images/illustration-1.svg" alt="illustration-1" width="90%" height="90%">
+        <img  src="images/illustration-1.svg" alt="illustration-1" width="600px" height="400px">
       </div>      
     </section>
     <section class="row section-2">
@@ -65,7 +65,7 @@
         </div>
       </div>
       <div class="rigth-column">
-        <img src="images/illustration-2.svg" alt="illustration-2" width="90%" height="90%">
+        <img src="images/illustration-2.svg" alt="illustration-2" width="500px" height="350px">
       </div>
     </section>
     <section class="row section-3">
@@ -73,44 +73,73 @@
         <h3>Get early access today</h3>
         <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
       </div>
-      <form action="contact-2" class="rigth-column">
-        <input type="email" placeholder="email@example.com">
-        <input type="submit" value="Get Started For Free">
+      <form action="contact-2" class="rigth-column form-contact-2">
+        <input type="email" placeholder="email@example.com" id="email-contact-2">
+        <input type="submit" value="Get Started For Free" class="button">
       </form>
     </section>
   </main>
   <footer>
-    <div>
-      <img src="images/logo.svg" alt="logo" id="logo-footer">
-      <span>
-        <img src="images/icon-phone.svg" alt="icon-phone">Phone: +1-543-123-4567
-      </span>
-      <span>
-        <img src="images/icon-email.svg" alt="icon-email">example@fylo.com
-      </span>
+    <div class="logo-footer-container">
+      <img src="images/logo_white.svg" alt="logo" width="150px" height="50px">
     </div>
-    <div>
-      <ul>
-        <li>About Us</li>
-        <li>Jobs</li>
-        <li>Press</li>
-        <li>Blog</li>
-      </ul>
+    <div class="left-column">
+      <div class="footer-contact-info">      
+        <span>
+          <img src="images/icon-phone.svg" alt="icon-phone" class="icon"><span>Phone: +1-543-123-4567</span>
+        </span>
+        <span>
+          <img src="images/icon-email.svg" alt="icon-email" class="icon"><span>example@fylo.com</span>
+        </span>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="https://www.frontendmentor.io/challenges" target="blank">About Us</a>
+          </li>
+          <li>
+            <a href="https://www.frontendmentor.io/challenges" target="blank">Jobs</a>
+          </li>
+          <li>
+            <a href="https://www.frontendmentor.io/challenges" target="blank">Press</a>
+          </li>
+          <li>
+            <a href="https://www.frontendmentor.io/challenges" target="blank">Blog</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <li>Contact Us</li>
-      <li>Terms</li>
-      <li>Privacy</li>
+    <div class="rigth-column">
+      <div class=" item-footer">
+        <ul>
+          <li>
+            <a href="https://www.frontendmentor.io/challenges" target="blank">Contact Us</a>
+          </li>
+          <li>
+            <a href="https://www.frontendmentor.io/challenges" target="blank">Terms</a>
+          </li>
+          <li>
+            <a href="https://www.frontendmentor.io/challenges" target="blank">Privacy</a>
+          </li>
+        </ul>
+      </div>
+      <div class=" social-icons">
+        <button class="button-social">
+          <img src="images/icons8-facebook-f.svg" alt="" width="20" height="20">
+        </button>
+        <button class="button-social">
+          <img src="images/icons8-twitter.svg" alt="" width="20" height="20">
+        </button>
+        <button class="button-social">
+          <img src="images/icons8-instagram.svg" alt="" width="20" height="20">
+        </button>
+      </div>
     </div>
-    <div>
-      <span>logoFacebook</span>
-      <span>logoTwitter</span>
-      <span>LogoWeb</span>
-    </div>
-    <p class="attribution">
+    
+    <!--p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
-    </p>
+    </p-->
   </footer>
 </body>
 </html>
