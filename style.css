@@ -1,3 +1,12 @@
+:root {
+    --primary-very-dark-blue: hsl(243, 87%, 12%);
+    --primary-desaturated-blue: hsl(238, 22%, 44%);
+    --accent-bright-blue: hsl(224, 93%, 58%);
+    --accent-moderate-cyan: hsl(170, 45%, 43%);
+    --neutral-light-grayish-blue: hsl(240, 75%, 98%);
+    --neutral-light-gray: hsl(0, 0%, 75%);
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -9,7 +18,7 @@ img {
 }
 
 ::placeholder {
-    color: hsl(0, 0%, 75%);
+    color: var(--neutral-light-gray);
 }
 /* HEADER */
 header {
@@ -24,7 +33,7 @@ nav {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     width: 30%;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue);
 }
 
 nav ul {
@@ -65,7 +74,7 @@ h1 {
     line-height: 1.5;
     font-weight: bold;
     font-size: 2rem;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue);
 }
 
 .text-section-1 {
@@ -74,7 +83,7 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue);
 }
 
 #form-contact {
@@ -91,32 +100,32 @@ h1 {
     font-size: medium;
     font-weight: 600;
     border-radius: 4px;
-    border: 1px solid hsl(243, 87%, 12%);
+    border: 1px solid var(--primary-very-dark-blue);
 }
 
 .button {
-    background-color: hsl(224, 93%, 58%);
-    border: 1px solid hsl(224, 93%, 58%);
+    background-color: var(--accent-bright-blue);
+    border: 1px solid var(--accent-bright-blue);
     border-radius: 4px;
     flex: 0.3;
     font-weight: bold;
     font-size:small;
-    color: hsl(240, 75%, 98%);
+    color: var(--neutral-light-grayish-blue);
 }
 
 .button:active, .button:hover {
-    background-color: hsl(220, 100%, 68%);
+    background-color: hsl(224, 97%, 74%);
     cursor: pointer;
 }
 
 .button-social:active, .button-social:hover {
-    border: 1px solid hsl(220, 100%, 68%);
+    border: 1px solid var(--accent-bright-blue);
     cursor: pointer;
 }
 
 a:hover {
     cursor: pointer;
-    color: hsl(220, 100%, 68%);
+    color: var(--primary-desaturated-blue);
 }
 
 #contact-mail:active {
@@ -128,7 +137,7 @@ a:hover {
 .section-2 {
     margin-top: 10px;
     position: relative;
-    background-color: hsl(240, 75%, 98%);
+    background-color: var(--neutral-light-grayish-blue);
 }
 
 .section-2::before {
@@ -148,7 +157,7 @@ h2 {
     line-height: 1.5;
     font-weight: bold;
     font-size: 2rem;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue);
 }
 
 .section-2 p {
@@ -157,7 +166,7 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 0.9rem;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue)
 }
 
 .section-2 .left-column {
@@ -165,10 +174,10 @@ h2 {
 }
 
 .section-2 a {
-    color: hsl(170, 45%, 43%);
+    color: var(--accent-moderate-cyan);
     text-decoration: none;
     border-bottom: 1px solid;
-    border-color: hsl(170, 45%, 43%);
+    border-color: var(--accent-moderate-cyan)
 }
 
 .testimonial-card {
@@ -177,7 +186,7 @@ h2 {
     width: 70%;
     padding: 0px 15px 10px 25px;
     margin-top: 50px;
-    box-shadow: 2px 2px 5px 2px hsl(0, 0%, 75%);
+    box-shadow: 2px 2px 5px 2px var(--neutral-light-gray);
 }
 
 .quote-testimonial {
@@ -193,7 +202,7 @@ h2 {
     font-weight: 400;
     line-height: 1.5;
     font-size: 0.8rem;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue);
 }
 
 .testimonial-user-info {
@@ -209,7 +218,7 @@ h2 {
     width: 100%;
     margin: 0px;
     font-size: 0.8rem;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -224,13 +233,13 @@ h2 {
     margin: 0px;
     font-weight: bold;
     font-size: 1rem;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue);
 }
 
 /* section 3 */
 .section-3 {
-    background-color: hsl(238, 22%, 44%);
-    color: hsl(240, 75%, 98%);
+    background-color: var(--primary-desaturated-blue);
+    color: var(--neutral-light-grayish-blue);
     height: 10em;
 }
 
@@ -239,7 +248,7 @@ h2 {
     margin: 0px;
     font-weight: 700;
     font-size: 1.7rem;
-    color: hsl(240, 75%, 98%);
+    color: var(--neutral-light-grayish-blue);
 }
 
 .section-3 p {
@@ -264,14 +273,14 @@ h2 {
     font-size: small;
     font-weight: 600;
     border-radius: 7px;
-    border: 1px solid hsl(240, 75%, 98%);
+    border: 1px solid var(--neutral-light-grayish-blue);
 }
 
 /* footer */
 footer {
     padding-top: 70px;
-    background-color: hsl(243, 87%, 12%);
-    color: hsl(240, 75%, 98%);
+    background-color: var(--primary-very-dark-blue);
+    color: var(--neutral-light-grayish-blue);
     justify-content: space-between;
     align-items: baseline;
 }
@@ -306,7 +315,7 @@ footer li {
 
 footer a {
     text-decoration: none;
-    color: hsl(240, 75%, 98%);
+    color: var(--neutral-light-grayish-blue);
 }
 
 footer .left-column {
@@ -333,7 +342,7 @@ footer .rigth-column {
     align-content: center;
     border-radius: 50px;
     background: none;
-    border-color: hsl(240, 75%, 98%);
+    border-color: var(--neutral-light-grayish-blue);
 }
 
 .social-icons {
@@ -362,7 +371,7 @@ header {
 nav {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue);
     width: 100%;
 }
 
@@ -401,7 +410,7 @@ h1 {
     line-height: 1.2;
     font-weight: bold;
     font-size: 24px;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue);
 }
 
 .text-section-1 {
@@ -411,7 +420,7 @@ h1 {
     font-weight: 400;
     text-align: center;
     font-size: 16px;
-    color: hsl(243, 87%, 12%);
+    color: var(--primary-very-dark-blue);
 }
 
 #form-contact {
@@ -428,7 +437,7 @@ h1 {
     font-weight: 600;
     border-radius: 7px;
     border: 1px solid;
-    border-color: hsl(243, 87%, 12%);
+    border-color: var(--primary-very-dark-blue);
 }
 
 .button {
@@ -535,7 +544,7 @@ footer li {
 
 footer a {
     text-decoration: none;
-    color: hsl(240, 75%, 98%);
+    color: var(--neutral-light-grayish-blue);
 }
 
 footer .left-column {
