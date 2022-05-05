@@ -1,0 +1,36 @@
+.main__text {
+    max-width: 525px;
+}
+
+.contact-form__button {
+    cursor: pointer;
+}
+
+.contact-form__input:invalid {
+    outline-color: rgb(250, 206, 206);
+}
+
+.contact-form__button:hover {
+    background-color: rgb(88, 130, 245);
+}
+
+.subscription-form__input:invalid {
+    outline-color: rgb(250, 206, 206);
+}
+
+
+.subscription-form__button {
+    cursor: pointer;
+}
+
+.subscription-form__button:hover {
+    background-color: hsl(224deg 78% 71%);
+}
+
+.section2__text {
+    max-width: 525px;
+}
+
+.section3__text {
+    max-width: 70%;
+}
